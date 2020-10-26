@@ -1,0 +1,87 @@
+@import 'MyProjectCards.css';
+.project {
+  height: 650px;
+  background: url('../../assets/Project/pjbg.jpg') no-repeat;
+  background-size: cover;
+  background-position: 90%;
+}
+.project-title {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  right: 50px;
+  bottom: 50px;
+  font: 80px/80px "微软雅黑";
+}
+.project-title p:nth-child(2) {
+  font-size: 50px;
+}
+.project-preview {
+  position: absolute;
+  right: 110px;
+  top: -170px;
+  height: 500px;
+  width: 300px;
+  background-color: white;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.project-preview img {
+  position: absolute;
+  width: 510px;
+  height: 690px;
+  z-index: 1;
+}
+.project-preview iframe {
+  background-color: white;
+  position: absolute;
+  height: 490px;
+  width: 294px;
+  z-index: 2;
+}
+.project-preview .phone-cover {
+  position: absolute;
+  height: 510px;
+  width: 300px;
+  background-color: #292929;
+  z-index: 3;
+  cursor: pointer;
+}
+.project-preview .phone-cover p {
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  text-align: center;
+  color: white;
+  font: 30px/50px "微软雅黑";
+}
+.project-all {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.project-all .img-demo {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+.project-all .project-content {
+  position: absolute;
+  border-radius: 10px;
+  width: 1060px;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 100px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}

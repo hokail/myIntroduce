@@ -1,0 +1,116 @@
+.project{
+  height: 650px;
+  background: url('../../assets/Project/pjbg.jpg') no-repeat ;
+  background-size: cover;
+  background-position: 90%;
+  // overflow-x: hidden;
+  // overflow-y: auto;
+}
+.project-title{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  right: 50px;
+  bottom: 50px;
+  font: 80px/80px "微软雅黑";
+  p:nth-child(2){
+    font-size: 50px;
+  }
+}
+.project-preview{
+  position: absolute;
+  right: 110px;
+  top: -170px;
+  height: 500px;
+  width: 300px;
+  background-color: white;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // overflow: hidden;
+  img{
+    position: absolute;
+    width: 510px;
+    height: 690px;
+    z-index: 1;
+  }
+  iframe{
+    background-color: white;
+    position: absolute;
+    height: 490px;
+    width: 294px;
+    z-index: 2;
+  }
+  .phone-cover{
+    position: absolute;
+    height: 510px;
+    width: 300px;
+    background-color: rgb(41, 41, 41);
+    z-index: 3;
+    cursor: pointer;
+    p{
+      position: absolute;
+      width: 100%;
+      height: 50px;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      text-align: center;
+      color: white;
+      font: 30px/50px "微软雅黑";
+    }
+  }
+}
+.project-all{
+  position: relative;
+  width: 100%;
+  height: 100%; 
+  .img-demo{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  .project-content{
+    position: absolute;
+    border-radius: 10px;
+    width: 1060px;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 100px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center
+  }
+}
+// .arrow{
+//   position: absolute;
+//   background-color: black;
+//   width: 50px;
+//   height: 50px;
+//   color: white;
+//   border-radius: 50%;
+//   box-shadow: 0 0 5px rgb(232, 240, 245) ;
+//   z-index: 100;
+//   img{
+//     position: absolute;
+//     width: 25px;
+//     height: 25px;
+//   }
+// }
+// .left-arrow{
+//   left: 200px;
+// }
+// .right-arrow{
+//   right: 200px;
+// }
+// .swiper-button-prev:after,
+// .swiper-button-next:after{
+//   content: '';
+// }
+
+@import './MyProjectCards.css';

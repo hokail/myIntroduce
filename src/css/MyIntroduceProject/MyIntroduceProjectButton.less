@@ -1,0 +1,71 @@
+.button-prev, .button-next {
+	transition: 0.5s;
+	outline: none;
+	position: absolute;
+	width: 140px;
+	z-index: 10;
+	// top: 60%;
+	bottom: 15%;
+	transform: translateY(-34px);
+	cursor: pointer;
+}
+#arrow-trg {
+	transition: 0.5s;
+	fill: black;
+	transform: rotateY(180deg) translate(-53px, 39px);
+	
+}#line {
+	transition: 0.5s;
+	stroke: black;
+	transform: translate(50px, 42px);
+}
+.button-prev {
+	left: 100px;
+}
+.button-next {
+	right: 520px;
+}
+#arrow-svg-home {
+	transform: translateY(353px);
+}
+.button-next #arrow-svg-home {
+	transform: translateY(353px) rotateY(180deg);
+	transform-origin: 80px 0px 0px;
+}
+.project-all svg {
+	transition: 0.5s;
+	opacity: 0.1;
+}
+.cls-1 {
+	transition: 0.5s;
+	transform-origin: -20px 40px;
+}
+.cls-4 {
+	stroke-width: 2px;
+	stroke: black;
+	fill: none;
+	stroke-dasharray: 1;
+	stroke-dashoffset: 1;
+	transform-origin: 0px 0px 0px;
+}
+.button-prev:hover svg {
+	transform: translateX(-25px);
+	opacity: .6;
+}
+.button-next:hover svg {
+	transform: translateX(25px);
+	opacity: .6;
+}
+.button:hover .cls-1 {
+	transform: scale(1.1);
+}
+.button:hover .cls-4 {
+	stroke-dasharray: 2px;
+	stroke-dashoffset: 2px;
+}
+.button:hover #arrow-trg {
+	transform: rotateY(180deg) translate(-37px, 39px);
+}
+.button:hover #line {
+	transform: translate(35px, 42px) scaleX(0.33);
+}

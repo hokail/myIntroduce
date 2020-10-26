@@ -1,0 +1,16 @@
+.card {
+  height: 450px !important;
+  width: 480px;
+  border-radius: 2%;
+  cursor: pointer;
+}
+.card img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  height: 450px;
+  width: 280px ;
+  border-radius: 2%;
+  box-shadow: 0 0 15px #717070;
+}
